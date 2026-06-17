@@ -73,6 +73,22 @@
   @keyframes float{0%,100%{transform:translateY(0) rotate(3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
   .phone.front{animation:float 6s ease-in-out infinite}
 
+  /* hero responsive: モバイルは1カラムに折り返し */
+  @media(max-width:820px){
+    .hero{padding:52px 0 16px}
+    .hero-grid{grid-template-columns:1fr;text-align:center;gap:14px}
+    .hero-grid .lead{margin-left:auto;margin-right:auto}
+    .cta-row{justify-content:center}
+    .phones{min-height:440px;margin-top:6px}
+    .blob{opacity:.4}
+  }
+  @media(max-width:430px){
+    .phone{width:210px}
+    .phone.back{width:176px;left:3%;bottom:30px}
+    .phones{min-height:392px}
+    h1{font-size:2.1rem}
+  }
+
   /* sections */
   section{padding:64px 0}
   .sec-head{text-align:center;max-width:34em;margin:0 auto 38px}
@@ -274,9 +290,9 @@
     <p>お問い合わせ：<a href="mailto:s.hiro.dev2026@gmail.com">s.hiro.dev2026@gmail.com</a></p>
     <p style="margin-top:8px">
       <a href="/nakayoshi-kakeibo-privacy/">プライバシーポリシー</a> ・
-      <a href="/">Plexel</a>
+      <a href="/">Loofen24 Apps</a>
     </p>
-    <p style="margin-top:10px;font-size:.82rem;opacity:.8">© 2026 Plexel</p>
+    <p style="margin-top:10px;font-size:.82rem;opacity:.8">© 2026 Loofen24</p>
   </div>
 </footer>
 
